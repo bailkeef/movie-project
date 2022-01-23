@@ -1,0 +1,71 @@
+<div>
+  <h2>Online Movie Database Search</h2>
+
+  <div>
+    <span>Search:</span>
+    <input type="text" [formControl]="searchControl" />
+  </div>
+
+  <div>
+    <div *ngFor="let movie of movies | async">
+      <div>
+        <div>{{ movie.Title }}</div>
+        <div>
+          <div>
+            <img src="{{ movie.Poster }}" />
+            <div>
+              <div>Year released: {{ movie.Year }}</div>
+              <div>movie type: {{ movie.Type }}</div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <button>Details</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- <div class="movie-container">
+  <h2 class=".header-1">Online Movie Database Search</h2>
+
+  <div>
+    <form clrForm>
+      <clr-input-container>
+        <label>Search:</label>
+        <input
+          clrInput
+          placeholder="Enter a movie title"
+          name="input"
+          [formControl]="searchControl"
+        />
+      </clr-input-container>
+    </form>
+  </div>
+
+  <div class="clr-row">
+    <div *ngFor="let movie of movies | async" class="clr-col-lg-4 clr-col-12">
+      <div class="card movie-card">
+        <div class="card-header">
+          {{ movie.Title }}
+        </div>
+        <div class="card-block movie-card-details">
+          <div>
+            <img src="{{ movie.Poster }}" class="card-movie-image" />
+            <div class="card-movie-description">
+              <div class="card-movie-title">
+                Year released: {{ movie.Year }}
+              </div>
+              <div class="card-movie-text">movie type: {{ movie.Type }}</div>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <button class="btn btn-sm btn-link">Details</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->

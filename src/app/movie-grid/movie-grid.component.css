@@ -1,0 +1,30 @@
+.movie-container {
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card-movie-image {
+    height: 300px;
+    max-width: 100%;
+}
+
+.card-movie-description {
+    margin-top: 0.5rem;
+}
+
+.movie-card {
+    height: 500px;
+    width: 290px;
+}
+
+.movie-card-details {
+    display: flex;
+    justify-content: center;
+}
+
+.movie-search-label {
+    width: 300px;
+}
